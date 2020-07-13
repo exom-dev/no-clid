@@ -1,6 +1,6 @@
 # About
 
-NoClid is an URL query filter for Node.js / Express.
+**NoClid** is an URL query filter for Node.js / Express.
 
 It was made to reject the useless and bloated clid query parameters, such as `fbclid` and `gclid`.
 
@@ -14,15 +14,15 @@ You can install NoClid just like any other npm package.
 npm i @exom-dev/no-clid --save
 ```
 
-> Note: this packages includes a declaration file for TypeScript.
+> Note: this package includes a declaration file for TypeScript.
 
 ## Usage
 
-NoClid is an express middleware. Here's a basic example.
+NoClid is an express middleware. Here's a basic example:
 
 ```javascript
 const app = require('express')();
-const noclid = require('@exom-dev/no-clid')();
+const noclid = require('@exom-dev/no-clid');
 
 app.use(noclid());
 
@@ -33,14 +33,14 @@ app.get('/', (request, response) => {
 app.listen(80);
 ```
 
-> If it is the case, NoClid will automatically redirect the user to the filtered URL, while keeping other request parameters the same.
+> If the URL contains `clid` parameters, NoClid will automatically redirect the user to the filtered URL, while keeping other request parameters the same.
 
 ### Default
 By default, NoClid will filter `fbclid` and `gclid` query parameters.
 
 ### Changing the default
 
-NoClid supports an array with query parameters you want to filter as fucntion argument.
+NoClid accepts an array of query parameters that should be filtered.
 
 ```javascript
 app.use(noclid(['q', 'lang', 'any-query-you-want']));
