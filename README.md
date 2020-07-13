@@ -46,6 +46,10 @@ NoClid accepts an array of query parameters that should be filtered.
 app.use(noclid(['q', 'lang', 'any-query-you-want']));
 ```
 
+# Releases
+
+[0.1.0](https://github.com/exom-dev/no-clid/releases/tag/0.1.0) - July 13th, 2020
+
 # License <a href="https://github.com/exom-dev/no-clid/blob/master/LICENSE"><img align="right" src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
 
 This project was created by [The Exom Developers](https://github.com/exom-dev).
