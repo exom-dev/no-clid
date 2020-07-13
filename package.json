@@ -1,0 +1,25 @@
+{
+  "name": "@exom-dev/fuck-clid",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "URL query filter for Node.js",
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "The Exom Developers (https://github.com/exom-dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exom-dev/fuck-clid.git"
+  },
+  "homepage": "https://github.com/exom-dev/fuck-clid",
+  "bugs": {
+    "url": "https://github.com/exom-dev/fuck-clid/issues"
+  },
+  "scripts": {
+    "git:pull": "git pull https://github.com/exom-dev/fuck-clid master",
+    "git:push": "git push https://github.com/exom-dev/fuck-clid master"
+  },
+  "license": "WTFPL",
+  "dependencies": {}
+}
