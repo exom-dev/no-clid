@@ -35,9 +35,12 @@ app.listen(80);
 
 > If it is the case, NoClid will automatically redirect the user to the filtered URL, while keeping other request parameters the same.
 
+### Default
+By default, NoClid will filter `fbclid` and `gclid` query parameters.
+
 ### Changing the default
 
-NoClid supports an array with query parameters you want to filter as fucntion argument. By default, NoClid will filter `fbclid` and `gclid` query parameters.
+NoClid supports an array with query parameters you want to filter as fucntion argument.
 
 ```javascript
 app.use(noclid(['q', 'lang', 'any-query-you-want']));
