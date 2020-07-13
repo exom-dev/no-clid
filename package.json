@@ -23,6 +23,9 @@
     "git:pull": "git pull https://github.com/exom-dev/no-clid master",
     "git:push": "git push https://github.com/exom-dev/no-clid master"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
