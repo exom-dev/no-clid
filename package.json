@@ -20,7 +20,7 @@
     "git:pull": "git pull https://github.com/exom-dev/fuck-clid master",
     "git:push": "git push https://github.com/exom-dev/fuck-clid master"
   },
-  "license": "WTFPL",
+  "license": "MIT",
   "dependencies": {
     "url": "^0.11.0"
   },
