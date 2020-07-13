@@ -1,6 +1,6 @@
 import { Request, RequestHandler } from 'express';
 
-declare function fuckClid(): RequestHandler;
+declare function fuckClid(filter?: string[]): RequestHandler;
 declare function queryFilter(query: Request['query'], filter: object): null | object;
 declare function uriFilter(path: Request['path'], query: Request['query'], filter: object): null | string;
 
