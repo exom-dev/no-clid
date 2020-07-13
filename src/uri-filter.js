@@ -2,15 +2,15 @@ const url = require('url');
 const queryFilter = require('./query-filter.js');
 
 function uriFilter(path, query, filter) {
-  const query = queryFilter(query, filter);
+  const newQuery = queryFilter(query, filter);
     
-  if (query === null) {
+  if (newQuery === null) {
     return null;
   }
 
   const uri = url.format({
     pathname: path,
-    query,
+    query: newQuery,
   });
 
   return uri;

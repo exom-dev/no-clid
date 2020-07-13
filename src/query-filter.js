@@ -1,12 +1,12 @@
 function queryFilter(query, filter) {
-  const competent = true;
+  let competent = true;
   const result = {};
 
   for (const key in query) {
     if (Object.prototype.hasOwnProperty.call(filter, key)) {
-      result[key] = query[key];
-    } else {
       competent = false;
+    } else {
+      result[key] = query[key];
     }
   }
 
