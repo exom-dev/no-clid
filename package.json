@@ -1,5 +1,5 @@
 {
-  "name": "@exom-dev/fuck-clid",
+  "name": "@exom-dev/no-clid",
   "version": "0.1.0",
   "main": "index.js",
   "description": "URL query filter for Node.js",
@@ -7,22 +7,21 @@
     "query-filter",
     "fbclid",
     "gclid",
-    "fuck-you",
     "express",
     "no-tracking"
   ],
   "author": "The Exom Developers (https://github.com/exom-dev)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exom-dev/fuck-clid.git"
+    "url": "git+https://github.com/exom-dev/no-clid.git"
   },
-  "homepage": "https://github.com/exom-dev/fuck-clid",
+  "homepage": "https://github.com/exom-dev/no-clid",
   "bugs": {
-    "url": "https://github.com/exom-dev/fuck-clid/issues"
+    "url": "https://github.com/exom-dev/no-clid/issues"
   },
   "scripts": {
-    "git:pull": "git pull https://github.com/exom-dev/fuck-clid master",
-    "git:push": "git push https://github.com/exom-dev/fuck-clid master"
+    "git:pull": "git pull https://github.com/exom-dev/no-clid master",
+    "git:push": "git push https://github.com/exom-dev/no-clid master"
   },
   "license": "MIT",
   "dependencies": {},

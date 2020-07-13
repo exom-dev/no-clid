@@ -1,7 +1,7 @@
 const queryFilter = require('./src/query-filter.js');
 const uriFilter = require('./src/uri-filter.js');
 
-function fuckClid(filter = ['fbclid', 'gclid']) {
+function noClid(filter = ['fbclid', 'gclid']) {
   if (!(filter && (filter instanceof Array))) {
     throw `Invalid argument 'filter' (expected: array | found: ${typeof(filter)})`;
   }
@@ -23,7 +23,7 @@ function fuckClid(filter = ['fbclid', 'gclid']) {
   };
 }
 
-module.exports = fuckClid;
+module.exports = noClid;
 
 module.exports.queryFilter = queryFilter;
 module.exports.uriFilter = uriFilter;
