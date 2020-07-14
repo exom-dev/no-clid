@@ -2,7 +2,7 @@
   "name": "@exom-dev/no-clid",
   "version": "0.1.0",
   "main": "index.js",
-  "description": "URL query filter for Node.js",
+  "description": "URL query filter for Express.js",
   "keywords": [
     "query-filter",
     "fbclid",
