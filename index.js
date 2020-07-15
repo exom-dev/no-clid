@@ -1,4 +1,3 @@
-const queryFilter = require('./src/query-filter.js');
 const uriFilter = require('./src/uri-filter.js');
 
 function noclid(filter = ['fbclid', 'gclid']) {
@@ -26,6 +25,3 @@ function noclid(filter = ['fbclid', 'gclid']) {
 }
 
 module.exports = noclid;
-
-module.exports.queryFilter = queryFilter;
-module.exports.uriFilter = uriFilter;
