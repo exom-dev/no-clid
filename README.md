@@ -48,6 +48,8 @@ app.use(noclid(['q', 'lang', 'any-query-you-want']));
 
 # Releases
 
+[0.1.1](https://github.com/exom-dev/no-clid/releases/tag/0.1.1) - July 20th, 2020
+
 [0.1.0](https://github.com/exom-dev/no-clid/releases/tag/0.1.0) - July 13th, 2020
 
 # License <a href="https://github.com/exom-dev/no-clid/blob/master/LICENSE"><img align="right" src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
