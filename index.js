@@ -1,4 +1,4 @@
-const uriFilter = require('./src/uri-filter.js');
+const url = require('url');
 
 function noclid(filter = ['fbclid', 'gclid']) {
   if (!(filter && (filter instanceof Array))) {
@@ -12,13 +12,25 @@ function noclid(filter = ['fbclid', 'gclid']) {
   }
 
   return (request, response, next) => {
-    const uri = uriFilter(request.path, request.query, filterMap);
+    let competent = true;
+    const query = {};
 
-    console.log(request.path, request.query, filterMap, uri);
-    
-    if (uri === null) {
-      return next();
+    for (const key in request.query) {
+      if (Object.prototype.hasOwnProperty.call(filterMap, key)) {
+        competent = false;
+      } else {
+        query[key] = request.query[key];
+      }
     }
+
+    if (competent) {
+      return next();
+    }    
+
+    const uri = url.format({
+      pathname: request.path,
+      query,
+    });
 
     response.redirect(302, uri);
   };
